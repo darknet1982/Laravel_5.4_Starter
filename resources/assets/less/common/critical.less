@@ -1,0 +1,174 @@
+@import "../_variables";
+
+// BASE STYLING
+* {
+  box-sizing: border-box;
+  -ms-overflow-style: none;
+  overflow: visible;
+  &::-webkit-scrollbar { width: 0 !important }
+}
+*:focus {
+  outline:none;
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  -webkit-font-smoothing: antialiased;
+  .font-raleway();
+  .font-light();
+  font-size: @base-font-size; // BASE FONT SIZE
+  color: @palette-black;
+  line-height: 1.3em;
+  padding: 0;
+  margin: 0;
+  @media screen and (min-width: @breakpoint-max) {
+    font-size: 24px;
+  }
+  @media screen and (max-width: @breakpoint-md) {
+    font-size: 16px;
+  }
+}
+
+// Remove the autocomplete syling in WebKit
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  background-color: transparent !important;
+  border: none;
+  -webkit-box-shadow: 0 0 0 1000px transparent inset;
+}
+p {
+  margin: 0;
+}
+h1 {
+  display: none !important;
+}
+h2, h3, h4, h5, h6 {
+  color: @palette-black;
+  .font-bold();
+  margin: 0;
+  padding: 0;
+  line-height: 0.9em;
+}
+a {
+  text-decoration: none;
+  color: @palette-black;
+  transition: color 0.3s;
+  &:hover,
+  &:focus,
+  &:active {
+    color: lighten(@palette-black, 20%);
+  }
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: @base-padding;
+  @media screen and (min-width: @breakpoint-max) {
+    padding: @lrg-padding;
+  }
+  @media screen and (max-width: @breakpoint-lg) {
+    padding: @base-lg-padding;
+  }
+  @media screen and (max-width: @breakpoint-md) {
+    padding: (@base-md-padding + 20) @base-md-padding;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.font-raleway {
+  .font-raleway();
+}
+.upper {
+  text-transform: uppercase;
+}
+.lower {
+  text-transform: capitalize !important;
+}
+.font-light {
+  .font-light();
+}
+.font-light-italic {
+  .font-light-italic();
+}
+.font-regular {
+  .font-regular();
+}
+.font-medium {
+  .font-medium();
+}
+.font-bold {
+  .font-bold();
+}
+.txt-white {
+  color: @palette-white;
+}
+.txt-grey {
+  color: @palette-grey;
+}
+
+.bg-white {
+  background-color: @palette-white;
+}
+.bg-black {
+  background-color: @palette-black;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-left {
+  flex: 1;
+  padding-right: @base-padding / 2;
+  @media screen and (max-width: @breakpoint-md) {
+    padding-right: 0;
+  }
+}
+.flex-right {
+  flex: 1;
+  padding-left: @base-padding / 2;
+  @media screen and (max-width: @breakpoint-md) {
+    padding-left: 0;
+  }
+}
+.left {
+  padding-right: @base-padding / 2;
+  @media screen and (max-width: @breakpoint-md) {
+    padding-right: 0;
+  }
+}
+.right {
+  padding-left: @base-padding / 2;
+  @media screen and (max-width: @breakpoint-md) {
+    padding-left: 0;
+  }
+}
+.left,
+.right {
+  width: 50%;
+  @media screen and (max-width: @breakpoint-md) {
+    width: 100%;
+  }
+}
