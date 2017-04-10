@@ -10,11 +10,14 @@
         "backpack/crud": "^3.2",
         "backpack/logmanager": "^2.3",
         "backpack/permissionmanager": "^2.1",
+        "guzzlehttp/guzzle": "^6.2",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
-        "spatie/laravel-fractal": "^3.5"
+        "spatie/laravel-fractal": "^3.5",
+        "swisnl/laravel-fulltext": "^0.1.7"
     },
     "require-dev": {
+        "orangehill/iseed": "dev-master",
         "backpack/generators": "^1.1",
         "fzaninotto/faker": "~1.4",
         "laravel/homestead": "^5.1",
