@@ -39,6 +39,30 @@
                 customData: {
                     _token: '<?= csrf_token() ?>'
                 },
+                uiOptions : {
+                    // toolbar configuration
+                    toolbar: [
+                        ['back', 'forward'],
+                        //['netmount'],
+                        // ['reload'],
+                        // ['home', 'up'],
+                        ['upload'],
+                        //['mkdir', 'mkfile', 'upload'],
+                        ['open', 'download', 'getfile'],
+                        //['info', 'chmod'],
+                        ['quicklook'],
+                        //['copy', 'cut', 'paste'],
+                        ['rm'],
+                        //['duplicate', 'rename', 'edit', 'resize'],
+                        //['extract', 'archive'],
+                        //['search'],
+                        //['view', 'sort'],
+                        //['help'],
+                        //['fullscreen'],
+                        // extra options
+
+                    ],
+                },
                 url: '<?= route('elfinder.connector') ?>',  // connector URL
                 dialog: {width: 900, modal: true, title: 'Select a file'},
                 resizable: false,

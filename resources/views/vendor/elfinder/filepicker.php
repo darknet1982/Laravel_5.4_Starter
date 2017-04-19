@@ -61,10 +61,24 @@
                 uiOptions : {
                     // toolbar configuration
                     toolbar : [
-                        ['home', 'up'],
+                        ['back', 'forward'],
+                        //['netmount'],
+                        // ['reload'],
+                        // ['home', 'up'],
                         ['upload'],
-
+                        //['mkdir', 'mkfile', 'upload'],
+                        ['open', 'download', 'getfile'],
+                        //['info', 'chmod'],
                         ['quicklook'],
+                        //['copy', 'cut', 'paste'],
+                        ['rm'],
+                        //['duplicate', 'rename', 'edit', 'resize'],
+                        //['extract', 'archive'],
+                        //['search'],
+                        //['view', 'sort'],
+                        //['help'],
+                        //['fullscreen'],
+                        // extra options
 
                     ],
                     // directories tree options
